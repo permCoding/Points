@@ -7,14 +7,16 @@ namespace Points
     {
         static void Main()
         {
-            Point point = new Point();
+            int countPoints = 5;
 
             List<Point> points = new List<Point>();
-            points.Add(point);
-            points.Add(point);
-            points.Add(point);
+            for (int i = 0; i < countPoints; i++)
+                points.Add(new Point());
 
-            Console.WriteLine($"X = {points[0].X}; Y = {points[0].Y}");
+            points[1].Y = 15;
+
+            foreach (var p in points)
+                Console.WriteLine($"X = {p.X}; Y = {p.Y}");
 
             Console.ReadLine();
         }
