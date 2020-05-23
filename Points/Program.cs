@@ -36,6 +36,11 @@ namespace Points
                         p.MovePoint();
                 }
                 cki = Console.ReadKey(true);
+                //switch (cki.Key)
+                //{
+                //    default:
+                //}
+                // cki.Key == ConsoleKey.LeftArrow
             } while (cki.Key != ConsoleKey.Escape);
         }
     }
