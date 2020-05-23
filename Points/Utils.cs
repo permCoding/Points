@@ -22,5 +22,10 @@ namespace Points
             this.Id = ++index;
         }
         // методы
+        public void SetPoint()
+        {
+            Console.SetCursorPosition(this.X, this.Y);
+            Console.Write('#');
+        }
     }
 }
