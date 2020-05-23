@@ -12,9 +12,13 @@ namespace Points
             List<Point> points = new List<Point>();
             for (int i = 0; i < countPoints; i++)
                 points.Add(new Point());
+            points.RemoveAt(3);
+            points.RemoveAt(1);
+            for (int i = 0; i < countPoints; i++)
+                points.Add(new Point());
 
             foreach (var p in points)
-                Console.WriteLine($"X = {p.X}; Y = {p.Y}");
+                Console.WriteLine($"Id = {p.Id}; X = {p.X}; Y = {p.Y}");
 
             Console.ReadLine();
         }

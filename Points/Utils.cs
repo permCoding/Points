@@ -7,6 +7,8 @@ namespace Points
         // поля
         public int X;
         public int Y;
+        public int Id;
+        public static int index = -1;
         // конструкторы
         public Point() : this(0, 0)
         {
@@ -17,6 +19,7 @@ namespace Points
         {
             this.X = x;
             this.Y = y;
+            this.Id = ++index;
         }
         // методы
     }
