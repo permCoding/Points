@@ -27,7 +27,16 @@ namespace Points
             foreach (var p in points)
                 p.SetPoint();
 
-            Console.ReadLine();
+            ConsoleKeyInfo cki;
+            do
+            {
+                while (Console.KeyAvailable == false)
+                {
+                    foreach (var p in points)
+                        p.MovePoint();
+                }
+                cki = Console.ReadKey(true);
+            } while (cki.Key != ConsoleKey.Escape);
         }
     }
 }
