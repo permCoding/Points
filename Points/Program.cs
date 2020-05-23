@@ -13,8 +13,6 @@ namespace Points
             for (int i = 0; i < countPoints; i++)
                 points.Add(new Point());
 
-            points[1].Y = 15;
-
             foreach (var p in points)
                 Console.WriteLine($"X = {p.X}; Y = {p.Y}");
 
